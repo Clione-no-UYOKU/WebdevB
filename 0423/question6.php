@@ -41,3 +41,10 @@ $matrix = [
   [3, 8, 2],
 ];
 #  5. 上記の配列の中から、値が5以上のものだけ表示してください。
+foreach($matrix as $row){
+    foreach($row as $num){
+        if($num >= 5){
+            echo $num . '<br>';
+        }
+    }
+}
